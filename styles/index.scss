@@ -16,20 +16,14 @@ body {
   align-items: center;
   cursor: pointer;
   display: flex;
-  flex: 1;
   justify-content: center;
-  transition: flex .2s ease;
+
+  width: 50%;
+  height: 50%;
+  transition: height .2s ease, width .2s ease;
 
   h3 {
     transition: font-size .2s ease;
-  }
-
-  &:hover {
-    flex: 9;
-
-    h3 {
-      font-size: 2em;
-    }
   }
 }
 
