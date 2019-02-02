@@ -1,37 +1,49 @@
+/* Coolors Exported Palette - coolors.co/2c302e-474a48-909590-9ae19d-537a5a */
+/* RGB */
 body {
-  font-family: 'Roboto Mono', monospace;
+  color: #9ae19d;
+  font-family: "Roboto Mono", monospace;
 }
 
 .wrapper {
   display: flex;
-  width: 100vw;
-  height: 100vh;
   flex-wrap: wrap;
+  height: 100vh;
+  width: 100vw;
 }
 
 .quadrant {
-  flex: 1;
+  align-items: center;
   cursor: pointer;
   display: flex;
+  flex: 1;
   justify-content: center;
-  align-items: center;
-
-  transition: flex .2s ease;
+  transition: flex 0.2s ease;
 }
-
 .quadrant h3 {
-  transition: font-size .2s ease;
+  transition: font-size 0.2s ease;
 }
-
 .quadrant:hover {
   flex: 9;
 }
-
 .quadrant:hover h3 {
   font-size: 2em;
 }
 
-.one { background: blue; }
-.two { background: red; }
-.three { background: green; }
-.four { background: yellow; }
+.one {
+  background: #2c302e;
+}
+
+.two {
+  background: #474a48;
+}
+
+.three {
+  background: #909590;
+}
+
+.four {
+  background: #537a5a;
+}
+
+/*# sourceMappingURL=index.css.map */

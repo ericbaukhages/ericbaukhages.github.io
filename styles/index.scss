@@ -1,0 +1,39 @@
+@import 'palette';
+
+body {
+  color: $color4;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+  width: 100vw;
+}
+
+.quadrant {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  transition: flex .2s ease;
+
+  h3 {
+    transition: font-size .2s ease;
+  }
+
+  &:hover {
+    flex: 9;
+
+    h3 {
+      font-size: 2em;
+    }
+  }
+}
+
+.one   { background: $color1; }
+.two   { background: $color2; }
+.three { background: $color3; }
+.four  { background: $color5; }
