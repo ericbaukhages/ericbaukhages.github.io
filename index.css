@@ -1,0 +1,37 @@
+body {
+  font-family: 'Roboto Mono', monospace;
+}
+
+.wrapper {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  flex-wrap: wrap;
+}
+
+.quadrant {
+  flex: 1;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: flex .2s ease;
+}
+
+.quadrant h3 {
+  transition: font-size .2s ease;
+}
+
+.quadrant:hover {
+  flex: 9;
+}
+
+.quadrant:hover h3 {
+  font-size: 2em;
+}
+
+.one { background: blue; }
+.two { background: red; }
+.three { background: green; }
+.four { background: yellow; }
