@@ -1,11 +1,11 @@
 @import 'palette';
 
 body {
-  color: $color4;
+  color: $black;
   font-family: 'Roboto Mono', monospace;
 }
 
-.wrapper {
+.quadrant-wrapper {
   display: flex;
   flex-wrap: wrap;
   height: 100vh;
@@ -23,11 +23,29 @@ body {
   transition: height .2s ease, width .2s ease;
 
   h3 {
-    transition: font-size .2s ease;
+    transition: font-size .2s ease, color .2s ease;
+  }
+
+  &:hover {
+    h3 {
+      font-size: 4em;
+      color: $color4;
+    }
+  }
+
+  background: url('../images/blaze-blue-blur-266896.jpg');
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
   }
 }
 
-.one   { background: $color1; }
-.two   { background: $color2; }
-.three { background: $color3; }
-.four  { background: $color5; }
+.one::after   { background-color: $color1; }
+.two::after   { background-color: $color2; }
+.three::after { background-color: $color3; }
+.four::after  { background-color: $color5; }

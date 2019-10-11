@@ -1,9 +1,9 @@
 body {
-  color: #9ae19d;
+  color: #000;
   font-family: "Roboto Mono", monospace;
 }
 
-.wrapper {
+.quadrant-wrapper {
   display: flex;
   flex-wrap: wrap;
   height: 100vh;
@@ -18,25 +18,38 @@ body {
   width: 50%;
   height: 50%;
   transition: height 0.2s ease, width 0.2s ease;
+  background: url("../images/blaze-blue-blur-266896.jpg");
 }
 .quadrant h3 {
-  transition: font-size 0.2s ease;
+  transition: font-size 0.2s ease, color 0.2s ease;
+}
+.quadrant:hover h3 {
+  font-size: 4em;
+  color: #beee62;
+}
+.quadrant::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
 
-.one {
-  background: #2c302e;
+.one::after {
+  background-color: #483c46;
 }
 
-.two {
-  background: #474a48;
+.two::after {
+  background-color: #3c6e71;
 }
 
-.three {
-  background: #909590;
+.three::after {
+  background-color: #70ae6e;
 }
 
-.four {
-  background: #537a5a;
+.four::after {
+  background-color: #f4743b;
 }
 
 /*# sourceMappingURL=index.css.map */
