@@ -2,4 +2,12 @@
 
 @tailwind components;
 
+.card {
+  @apply relative flex items-center justify-center cursor-pointer bg-cover bg-center bg-no-repeat w-1/2;
+}
+
+.transition {
+  transition: all 0.3s ease;
+}
+
 @tailwind utilities;
