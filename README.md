@@ -1,2 +1,1 @@
-# febvigrail.github.io
-Blog
+# eric.baukhag.es
