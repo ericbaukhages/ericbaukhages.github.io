@@ -1,45 +1,28 @@
-/* Font styling */
-
-html, body {
-  font-family: sans-serif;
+* {
+  box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5 {
-  font-family: monospace;
+html, body, main {
+  font-family: 'Share Tech Mono', monospace;
+
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
-h1 {
-  font-size: 5em;
+main {
+  display: flex;
+  flex-direction: column;
 }
 
-h3 {
-  font-size: 2em;
+header {
+  margin: auto auto;
 }
 
-/* Layout */
-
-.container {
-  width: 60%;
-  margin: 0 auto;
-}
-
-.header {
-  margin: 10px 0;
-}
-
-.article {
-  margin: 10px 0 40px 0;
-}
-
-.article .title {
-  margin-bottom: 5px;
-}
-
-.article .content {
-  margin: 10px 0;
-}
-
-.article .meta {
-  margin-top: 5px;
-  font-size: 0.9em;
+@media screen and (min-width: 900px) {
+  html, body, main {
+    font-size: 1.25rem;
+  }
 }
