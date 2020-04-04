@@ -10,6 +10,8 @@ html, body, main {
   margin: 0;
   padding: 0;
   border: 0;
+  background-color: white;
+  color: black;
 }
 
 main {
@@ -24,5 +26,12 @@ header {
 @media screen and (min-width: 900px) {
   html, body, main {
     font-size: 1.25rem;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  html, body, main {
+    background-color: black;
+    color: white;
   }
 }
